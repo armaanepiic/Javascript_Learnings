@@ -1,4 +1,40 @@
 
+// assignment operator
+
+var a = 19;
+var b = 12;
+a = b; // a == 12;
+console.log(a); // 12
+var c = a + b;
+console.log(c); // 24
+a += 10;
+console.log(a); // 22
+a -= 5;
+console.log(a); // 17
+
+c %= 2;
+console.log(c); // 0
+
+var Name = "Arman";
+Name += "!";
+console.log(Name);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 // conditional operator
 var a = (1 < 8) ? "Hello" : "world";
 console.log(a); // Hello
@@ -77,3 +113,4 @@ console.log("45" + "86"); // 4586 (string)
 
 console.log("45" - "abc"); // NaN
 
+*/
