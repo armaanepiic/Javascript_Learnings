@@ -9,7 +9,7 @@ console.log(a); // world
 
 
 
-/*
+
 // logical operator
 // || -> OR operator
 console.log(true || true); // t
@@ -77,4 +77,3 @@ console.log("45" + "86"); // 4586 (string)
 
 console.log("45" - "abc"); // NaN
 
-*/
