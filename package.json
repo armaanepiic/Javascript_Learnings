@@ -1,0 +1,16 @@
+{
+  "name": "javascript_learnings",
+  "version": "1.0.0",
+  "description": "From today I started learning JS again in a motivated way. I hope i will finish it with success.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./css/style.css",
+    "watch": "tailwindcss -i ./input.css -o ./css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
+  }
+}
