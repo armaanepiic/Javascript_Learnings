@@ -1,4 +1,26 @@
 
+// Operator
+// operand operator operand
+
+console.log(2 ** 3); // 2^3 = 8
+var a = 8;
+a++;
+console.log(a); // 9
+var b = 5;
+b--;
+console.log(b); // 4
+
+var a = 5, b = 7;
+var c, d;
+c = a++;
+d = ++b;
+console.log(c); // 5
+console.log(d); // 8
+
+
+
+
+/*
 // assignment operator
 
 var a = 19;
@@ -23,18 +45,6 @@ console.log(Name);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-/*
 // conditional operator
 var a = (1 < 8) ? "Hello" : "world";
 console.log(a); // Hello
