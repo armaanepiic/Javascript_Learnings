@@ -1,5 +1,15 @@
 
+// conditional operator
+var a = (1 < 8) ? "Hello" : "world";
+console.log(a); // Hello
 
+var a = 1 > 8 ? "Hello" : "world";
+console.log(a); // world
+
+
+
+
+/*
 // logical operator
 // || -> OR operator
 console.log(true || true); // t
@@ -20,7 +30,7 @@ console.log(4 > 6 && 1 < 7); // f
 console.log((4<6) && (6>2) && !(1>-9)) // f
 
 
-/*
+
 // comparison operator
 console.log(4 == 4); // t
 console.log(3 == 4); // f
