@@ -20,7 +20,7 @@ console.log(d); // 8
 
 
 
-/*
+
 // assignment operator
 
 var a = 19;
@@ -123,4 +123,3 @@ console.log("45" + "86"); // 4586 (string)
 
 console.log("45" - "abc"); // NaN
 
-*/
