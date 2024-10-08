@@ -1,4 +1,26 @@
 
+
+// logical operator
+// || -> OR operator
+console.log(true || true); // t
+console.log(true || false); // t 
+console.log(false || true); // t 
+console.log(false || false); // f
+// && AND operator
+console.log(true && true); // t
+console.log(true && false); // f
+console.log(false && true); // f 
+console.log(false && false); // f
+// ! NOT operator
+console.log(!false) // t
+console.log(!true); // f
+
+console.log((4 > 6) || (1 < 7)); // t
+console.log(4 > 6 && 1 < 7); // f
+console.log((4<6) && (6>2) && !(1>-9)) // f
+
+
+/*
 // comparison operator
 console.log(4 == 4); // t
 console.log(3 == 4); // f
@@ -24,7 +46,7 @@ console.log(`a = ${a}`); // a = false
 
 
 
-/*
+
 // normal operator
 
 var line1 = "Hello", line2 = "world";
