@@ -1,3 +1,4 @@
+/*
 // errors
 var var ;
 const var ;
