@@ -12,12 +12,30 @@ x = "hello \n world";
 x = "Hello";
 var y = " World";
 var z = x + y;
+x = "arman";
+var z = x.toUpperCase();
+var y = z.toLowerCase();
+x = "   Bangla   ";
+y = x.trim();
+x = "Bangladesh";
+y = x.slice(1, 4);  // ang
+y = x.slice(-5, -1); // ades
+y = x.slice(2); // ngladesh
+y = x.substr(3, 3); // gla
+y = x.replace("ang", "esh"); // Beshladesh
+y = x.replace("a", "esh"); // Beshngladesh
+
+var z = "desh";
+x = "Bangla";
+y = x.concat(z, "123"); // Bangladesh123
 
 
+
+// console.log(x[0]); // a
+console.log(x);
 console.log(z);
-console.log(z.length);
-
-// console.log(x);
+console.log(y);
+// console.log(z.length);
 
 
 
