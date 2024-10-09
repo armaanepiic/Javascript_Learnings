@@ -1,9 +1,10 @@
-// splitting array into string
 
-
-
-
-
+var countries = ["Oman", "Poland", "Bangladesh", "China"];
+console.log(countries);
+countries.sort();
+console.log(countries);
+countries.reverse();
+console.log(countries);
 
 
 
@@ -11,6 +12,21 @@
 
 
 /*
+// splitting array into string
+
+var x = ["USA", "UK", "UAE"];
+var z = x.toString(x);
+x = "Bangladesh is a country";
+z = x.split(" ");
+var y = z.toString(); // Bangladesh,is,a,country
+y = z.join(" "); // Bangladesh is a country
+
+
+console.log(y); 
+
+
+
+
 // spliting string to an array
 var x = "Bangladesh";
 var y = x.split(""); // (10) ['B', 'a', 'n', 'g', 'l', 'a', 'd', 'e', 's', 'h']
