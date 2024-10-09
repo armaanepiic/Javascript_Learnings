@@ -35,7 +35,14 @@ y = x.concat(z, "123"); // Bangladesh123
 console.log(x);
 console.log(z);
 console.log(y);
+console.log(Boolean(x));
+var a;
+console.log(Boolean(a)); // f
+a = 10 / "a";
+console.log(a); // NaN
+console.log(Boolean(a)); // f
 // console.log(z.length);
+// Boolean(undefined, null, NaN) == false
 
 
 
