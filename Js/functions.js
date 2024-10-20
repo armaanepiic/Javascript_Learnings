@@ -1,3 +1,35 @@
+
+// Date object
+let val;
+let today = new Date();
+val = today;
+val = today.toString();
+let birthday = new Date('04-30-1997 12:25:27');
+val = birthday;
+val = today.getMonth();
+val = today.getDate();
+val = today.getDay();
+val = today.getFullYear();
+val = today.getHours();
+val = today.getMinutes();
+val = today.getSeconds();
+val = today.getMilliseconds();
+val = today.getTime(); // amount of seconds passed since jan 1st 1970
+
+birthday.setMonth();
+
+console.log(birthday);
+// console.log(val);
+
+
+
+
+
+
+
+
+
+/*
 // Math object
 let val;
 
@@ -14,9 +46,6 @@ val = Math.max(8, 2, 4, 0);
 val = Math.random();
 val = Math.round(Math.random() * 100 + 1);
 
-
-
-
 console.log(val);
 
 
@@ -26,7 +55,7 @@ console.log(val);
 
 
 
-/*
+
 // Object methods
 let person = {
     firstName: "Arman",
