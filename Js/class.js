@@ -1,3 +1,32 @@
+// static function
+
+class Person {
+    // base class
+    constructor(fname, lname) {
+        this.firstName = fname;
+        this.lastName = lname;
+    }
+    greeting() {
+        console.log(`Hello ${this.firstName} ${this.lastName}`);
+    }
+
+    static test() {
+        console.log("I am static function");
+    }
+}
+
+let person1 = new Person("Arman", "Hossain");
+console.log(person1.greeting());
+console.log(Person.test());
+// static function must be called from class
+
+
+
+
+
+
+
+/*
 // Class (ES6)
 // class is a template for creating object
 // Subclass
@@ -33,16 +62,6 @@ console.log(customer1.greeting());
 console.log(customer1.fullName());
 
 
-
-
-
-
-
-
-
-
-
-/*
 class Person {
     constructor(fname, lname, birthday) {
         this.firstName = fname;
