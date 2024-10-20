@@ -1,4 +1,32 @@
+// Math object
+let val;
 
+val = Math.PI;
+val = Math.E;
+val = Math.round(3.6);
+val = Math.ceil(1.1);
+val = Math.floor(7.2);
+val = Math.sqrt(25);
+val = Math.abs(-2);
+val = Math.pow(2, 3);
+val = Math.min(8, 2, 4, 0);
+val = Math.max(8, 2, 4, 0);
+val = Math.random();
+val = Math.round(Math.random() * 100 + 1);
+
+
+
+
+console.log(val);
+
+
+
+
+
+
+
+
+/*
 // Object methods
 let person = {
     firstName: "Arman",
@@ -13,7 +41,7 @@ console.log(person.firstName);
 console.log(person.fullName());
 
 
-/*
+
 // array iteration using maping
 
 var foods = ["Cake", "Ice-cream", "Chocolates"];
