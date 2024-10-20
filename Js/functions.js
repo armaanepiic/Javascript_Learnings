@@ -1,3 +1,6 @@
+// array iteration using maping
+
+
 // Functions
 
 /*
@@ -23,8 +26,8 @@ demo3("Arman Hossain", "IIUC");
 
 // array iterating using forEach
 
-var foods = ["Cake", "Ice-cream", "Chocolates"];
-var numbers = [1, 32, 31, 2];
+// var foods = ["Cake", "Ice-cream", "Chocolates"];
+// var numbers = [1, 32, 31, 2];
 
 // 1st parameter: item
 // 2nd parameter: index
@@ -35,17 +38,27 @@ foods.forEach(function (value, i, abc) {
     console.log(`index : ${i} , item : ${value}`);
     console.log(abc);
 });
-*/
+
 // declaring funtion outside of forEach loop
 
 
-function printArray(item, i, fullArray) {
-    console.log(`index : ${i}, item : ${item}
-    ${fullArray}`);
-}
-foods.forEach(printArray);
+// function printArray(item, i, fullArray) {
+//     console.log(`index : ${i}, item : ${item}
+//     ${fullArray}`);
+// }
+// foods.forEach(printArray);
 
+// foods.forEach(function (value) {
+//     console.log(value);
+// });
 
+let printEverything = function (value, i, abc) {
+    console.log(`Indes ${i} item ${value}
+${abc}`);
+};
+
+foods.forEach(printEverything);
+*/
 
 /*
 function addNum(a = 0, b = 0) {
