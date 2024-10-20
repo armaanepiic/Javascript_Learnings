@@ -23,13 +23,13 @@ console.log(birthday);
 
 
 
-
-
-
-
-
-
 /*
+
+
+
+
+
+
 // Math object
 let val;
 
