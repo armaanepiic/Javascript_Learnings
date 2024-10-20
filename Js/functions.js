@@ -1,9 +1,46 @@
+
+// Object methods
+let person = {
+    firstName: "Arman",
+    lastName: "Hossain",
+    Dob: "30-04-1997",
+    Contact: "01874015451",
+    fullName: function(){
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
+console.log(person.firstName);
+console.log(person.fullName());
+
+
+/*
+// array iteration using maping
+
+var foods = ["Cake", "Ice-cream", "Chocolates"];
+let numbers = [1, 2, 3, 4, 5];
+
+function addSomething(item) {
+    return `${item} is a food`;
+}
+
+let array_res = foods.map(addSomething);
+
+console.log(array_res);
+
+function squareAll(item) {
+    return `${item*item}`;
+}
+let array_num = numbers.map(squareAll);
+console.log(array_num);
+
+
+
 // array iteration using maping
 
 
 // Functions
 
-/*
+
 // Normal Declaration
 function demo1(name) {
     console.log("Hello " + name);
