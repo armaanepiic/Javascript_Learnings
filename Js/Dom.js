@@ -1,7 +1,41 @@
 
 // DOM selector
 // document.getElementById()
- 
+let val;
+
+// Getting and element
+val = document.getElementById('document-title');
+val = document.getElementById("document-title").id;
+val = document.getElementById("document-title").className;
+
+// changing style
+document.getElementById('document-title').style.background = '#333';
+document.getElementById("document-title").style.color = '#fff';
+document.getElementById("document-title").style.padding = '10px';
+document.getElementById("document-title").style.display = 'block';
+document.getElementById("document-title").style.fontWeight = 'bold';
+// changing content
+document.getElementById("document-title").textContent = 'new title';
+document.getElementById("document-title").innerText = 'again new titile';
+document.getElementById("document-title").innerHTML = 'hello world';
+document.getElementById("document-title").innerText = "<i>Again again changed title</i>";
+document.getElementById("document-title").innerHTML = "<i>Again again changed title</i>";
+
+
+val = document.getElementById('document-title');
+val.innerText = "ha ha ha";
+
+// document.querySelector()
+val = document.querySelector('#document-title'); // id needs #
+val = document.querySelector(".title-class"); // class needs dot .
+val = document.querySelector('h3');
+val.style.color = 'red';
+val = document.querySelector('ol');
+val = document.querySelector('li');
+val = document.querySelector("ul li");
+
+
+console.log(val);
 
 
 
@@ -13,7 +47,7 @@
 
 
 
-
+/*
 // DOM element
 let val;
 
@@ -52,3 +86,4 @@ linkArr.forEach(function (link) {
 });
 
 console.log(val);
+*/
