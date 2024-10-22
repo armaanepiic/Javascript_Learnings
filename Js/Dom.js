@@ -1,3 +1,61 @@
+// Multiselector
+
+// document.querySelectorAll()
+// id -> %id
+// class -> .class
+// tagname -> nothing
+
+var list = document.querySelectorAll('.sample-class');
+var list = document.querySelectorAll("li");
+var list = document.querySelectorAll("ul li");
+var listOdd = document.querySelectorAll('li:nth-child(odd)');
+var listEven = document.querySelectorAll("li:nth-child(even)");
+
+listOdd.forEach(function (item) {
+  item.style.background = 'gray';
+  console.log(item);
+});
+listEven.forEach(function (item) {
+  item.style.background = "pink";
+  console.log(item);
+});
+
+console.log(list);
+
+
+
+/*
+// document.getElementsByTagName()
+
+let list = document.getElementsByTagName('li');
+list = document.querySelector('ol').getElementsByTagName('li');
+// it will access the list items of ol
+// querySelector('ol') finds the ol tag first
+list = document.querySelector("ul").getElementsByTagName("li");
+// it will access the list items of ul
+// querySelector('ul') finds the ol tag first
+
+let lisArray = Array.from(list);
+lisArray.forEach(function (item) {
+  console.log(item);
+})
+
+
+console.log(list[3]);
+
+
+// document.getElementByClassName()
+
+let list = document.getElementsByClassName('sample-class')
+list[0].style.background = 'blue';
+list[0].style.color = "yellow";
+list[0].style.padding = "20px";
+list[0].textContent = 'hello world!';
+
+console.log(list[0]);
+
+
+
 
 // DOM selector
 // document.getElementById()
@@ -32,22 +90,19 @@ val = document.querySelector('h3');
 val.style.color = 'red';
 val = document.querySelector('ol');
 val = document.querySelector('li');
-val = document.querySelector("ul li");
-
+val = document.querySelector("ol li");
+val.style.background = 'red';
+val.style.color = "blue";
+val = document.querySelector("li:last-child");
+val = document.querySelector("li:nth-child(2)"); // java
+document.querySelector("li:nth-child(2)").innerText = 'Hello';
+document.querySelector("li:nth-child(odd)").innerText = "ODD";
+document.querySelector("li:nth-child(even)").innerText = "EVEN";
 
 console.log(val);
 
 
 
-
-
-
-
-
-
-
-
-/*
 // DOM element
 let val;
 
