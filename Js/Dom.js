@@ -1,5 +1,66 @@
 // Multiselector
 
+/*
+
+// Adding Element to DOM
+// Create Element
+let olItem = document.createElement('li');
+
+// add id and class
+olItem.className = "a new another-class"
+olItem.id = "new-element";
+
+// Add Attribute
+olItem.setAttribute('title', 'A little to new Element');
+olItem.appendChild(document.createTextNode('Javascript'));
+document.querySelector('ol').appendChild(olItem);
+
+// console.log(olItem);
+
+let ulItem = document.createElement('li');
+let link = document.createElement('a');
+
+link.appendChild(document.createTextNode("Codeforces"));
+link.setAttribute('href', 'https://www.codeforces.com');
+ulItem.appendChild(link);
+
+document.querySelector('ul').appendChild(ulItem);
+
+
+console.log(ulItem);
+
+
+let val;
+let list = document.querySelector('ul');
+let listItem = document.querySelector('ul li:nth-child(1)');
+val = list;
+val = listItem;
+
+// Get Child Nodes
+val = list.childNodes[3];
+val = list.childNodes[3].nodeName; // LI
+val = list.childNodes[3].nodeType; // 1 for element
+// 1 Element
+// 2 Attribute
+// 3 Text Node
+// 8 Commnet
+// 9 Document Itesel
+// 10 Doctype
+val = list.children;
+// val = list.children[0].textContent = "hello";
+val = list.children[1].children; // a tag
+val = list.children[1].children[0].href;
+val = list.childElementCount;
+val = listItem.parentElement; // ul
+val = listItem.parentNode;
+val = listItem.nextSibling.nextSibling;
+val = listItem.nextElementSibling.nextElementSibling;
+const newLocal = val = listItem.previousSibling;
+val = listItem.previousElementSibling;
+
+console.log(val);
+
+
 // document.querySelectorAll()
 // id -> %id
 // class -> .class
@@ -22,9 +83,6 @@ listEven.forEach(function (item) {
 
 console.log(list);
 
-
-
-/*
 // document.getElementsByTagName()
 
 let list = document.getElementsByTagName('li');
