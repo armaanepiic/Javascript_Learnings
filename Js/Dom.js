@@ -1,6 +1,38 @@
 // Multiselector
-
 /*
+// remove element
+let listItems = document.querySelectorAll('li');
+let list = document.querySelector('ul');
+// listItems[5].remove(); // facebook deleted
+// list.removeChild(listItems[5]);
+list.classList.add("test");
+list.classList.remove('sample-class');
+
+let val = list.hasAttribute('title'); // false
+list.setAttribute("title", "New Title");
+val = list.hasAttribute('title'); // true
+console.log(val);
+
+console.log(list);
+console.log(listItems);
+
+
+
+// replacing element
+
+let newHeading = document.createElement('h1');
+newHeading.appendChild(document.createTextNode('H1 New Heading'));
+newHeading.className = 'sample-class';
+
+let oldHeading = document.querySelector('h3');
+let parent = document.querySelector(".container");
+parent.replaceChild(newHeading, oldHeading);
+
+console.log(newHeading);
+console.log(oldHeading);
+console.log(parent);
+
+
 
 // Adding Element to DOM
 // Create Element
