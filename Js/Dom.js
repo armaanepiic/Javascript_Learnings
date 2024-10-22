@@ -2,6 +2,45 @@
 
 // Events of javascript
 
+document.querySelector("#name").addEventListener('focus', test);
+document.querySelector("#name").addEventListener('keyup', test2);
+
+
+function test(e) {
+  this.style.background = "pink";
+}
+
+function test2() {
+  // console.log(this.value);
+  document.getElementById('demo').innerText = this.value;
+}
+
+
+/*
+
+document.querySelector(".container").addEventListener("mousemove", message);
+document.querySelector(".container").style.background = "red";
+document.querySelector("#sample-btn").style.background = "orange";
+
+function message(e) {
+  let val = e;
+  val = e.target;
+  val = e.target.id;
+  val = e.timeStamp;
+  val = e.type;
+  val = e.clientY;
+  val = e.clientX;
+  val = e.offsetY;
+  val = e.offsetX;
+
+  val = this;
+  val.style.background = `#${e.offsetX}`;
+
+  console.log(e.offsetX);
+  console.log(e.offsetY);
+}
+
+
 // Event listener
 
 let btn = document.getElementById('sample-btn').addEventListener('click', message);
@@ -10,8 +49,6 @@ function message() {
   console.log("Button Clicked");
 }
 
-
-/*
 // Onclick
 function message() {
   console.log("hi");
