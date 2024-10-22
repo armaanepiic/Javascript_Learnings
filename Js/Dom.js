@@ -1,5 +1,23 @@
 // Multiselector
+
+// Events of javascript
+
+// Event listener
+
+let btn = document.getElementById('sample-btn').addEventListener('click', message);
+
+function message() {
+  console.log("Button Clicked");
+}
+
+
 /*
+// Onclick
+function message() {
+  console.log("hi");
+}
+
+
 // remove element
 let listItems = document.querySelectorAll('li');
 let list = document.querySelector('ul');
