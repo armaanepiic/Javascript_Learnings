@@ -1,5 +1,5 @@
 // Multiselector
-
+/*
 // Events of javascript
 
 document.querySelector("#name").addEventListener('focus', test);
@@ -16,7 +16,7 @@ function test2() {
 }
 
 
-/*
+
 
 document.querySelector(".container").addEventListener("mousemove", message);
 document.querySelector(".container").style.background = "red";
