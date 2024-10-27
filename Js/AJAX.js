@@ -2,9 +2,13 @@
 
 
 document.getElementById('get_data').addEventListener('click', loadJokes);
+
 function loadJokes(e) {
+    let number = document.getElementById("numberJokes").value;
+    console.log(number);
+    
     let xhr = new XMLHttpRequest();
-    xhr.open("GET", 'https://api.chucknorris.io/jokes/random', true);
+    xhr.open("GET", `https://api.chucknorris.io/jokes/random/${number}`, true);
 
     xhr.onload = function () {
         if (this.status === 200) {
