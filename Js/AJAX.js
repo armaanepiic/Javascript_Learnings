@@ -1,3 +1,36 @@
+
+
+
+document.getElementById('get_data').addEventListener('click', loadJokes);
+function loadJokes(e) {
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", 'https://api.chucknorris.io/jokes/random', true);
+
+    xhr.onload = function () {
+        if (this.status === 200) {
+            let data = JSON.parse(this.responseText);
+            let joke = data.value;
+            // console.log(joke);
+            document.getElementById('output').innerText = joke;
+         }
+    }
+
+    xhr.send();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 // Asynchronus Programming
 // AJAX = Asynchronus Javascript and XML
 
@@ -31,7 +64,7 @@ function loadData() {
     // console.log(xhr);
 }
 
-
+*/
 
 
 
