@@ -1,19 +1,14 @@
-let person = {
-    name: 'Arman',
-    age: 26,
-    location: "chattogram",
-    sayHello: function () {
-        console.log("Hello world");
+
+let calculator = {
+    add: function (num1, num2) {
+        return num1 + num2;
+    },
+    diff: function (num1, num2) {
+        return Math.abs(num1-num2);
     }
 };
-let str = 'location';
+console.log(calculator.add(10, 20));
+console.log(calculator.diff(10, 20));
 
-console.log(person.str); // undefined
-console.log(person[str]); //chattogram
-console.log(person['location']); // chattogram
-person.interest = "Javascript";
-console.log(person.interest);
-delete person.location;
-console.log(person.location);
 
 
