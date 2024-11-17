@@ -1,14 +1,27 @@
 
-let calculator = {
-    add: function (num1, num2) {
-        return num1 + num2;
+let person = {
+    name: "Arman",
+    age: 25,
+    interest: ['JS', 'C++', 'Python'],
+    address : {
+        city: 'Chattogram',
+        zip: 4214,
+        showAddr() {
+            console.log(this);
+        }
     },
-    diff: function (num1, num2) {
-        return Math.abs(num1-num2);
+    sayHello() {
+        console.log('Hello ' + this.name);
+    },
+    showInterest() {
+        this.interest.forEach((el) => {
+            console.log(el, this.name);
+            
+        })
     }
 };
-console.log(calculator.add(10, 20));
-console.log(calculator.diff(10, 20));
+person.address.showAddr();
+
 
 
 
