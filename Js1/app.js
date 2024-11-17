@@ -4,6 +4,7 @@ let sayHello = function () {
     console.log("Hello World");
 }
 
-sayHello();
+// sayHello();
+console.log(sayHello);
     
 
