@@ -28,16 +28,21 @@ console.log(typeof num2); // string
 console.log(num * num2); // 40 (numbe)
 let num3 = "3a";
 console.log(num * num3); // NaN
-*/
+
 
 // truthy value
-// falsy value -> 0, -0, '', undefined, null, NaN
+// falsy value -> 0, -0, 0n, '', undefined, null, NaN
 
 console.log(Boolean(""));
+console.log('23' % 5); // reminder 3
+console.log(2 ** 3);
+*/
+let num = 15;
+// num = num + 1;
+// let num2 = num++;
+let num2 = ++num;
 
-
-
-
-
+console.log(num2);
+console.log(num);
 
 
