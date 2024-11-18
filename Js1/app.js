@@ -1,27 +1,18 @@
-
-let person = {
-    name: "Arman",
-    age: 25,
-    interest: ['JS', 'C++', 'Python'],
-    address : {
-        city: 'Chattogram',
-        zip: 4214,
-        showAddr() {
-            console.log(this);
+// Factory Function
+function createPerson(name, age, location) {
+    return {
+        name,
+        age,
+        location,
+        sayHello() {
+            console.log("Hello " + name);
         }
-    },
-    sayHello() {
-        console.log('Hello ' + this.name);
-    },
-    showInterest() {
-        this.interest.forEach((el) => {
-            console.log(el, this.name);
-            
-        })
-    }
-};
-person.address.showAddr();
+    };
+}
+let person1 = createPerson("Arman", 26, "Chattogram");
+let person2 = createPerson("Nusrat", 24, "Sitakund");
+let person3 = createPerson("Jane", 20, "USA");
 
-
-
-
+console.log(person1);
+console.log(person2);
+console.log(person3);
