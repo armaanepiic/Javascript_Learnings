@@ -1,16 +1,30 @@
 // DOM
 // Evenst in JS
 // eventlistener
-
+/*
 let btn = document.getElementById("sample-btn");
-btn.addEventListener('dblclick', message);
+btn.addEventListener('mouseover', message);
 
-function message() {
-    console.log("Button Clicked");
+function message(e) {
+    let val = e;
+    val = e.target;
+    val = e.target.id;
+    val = e.timeStamp;
+    val = e.type;
+    val = e.clientY;
+    val = e.clientX;
+    val = e.offsetY;
+    console.log(val);
     
 }
 
+*/
 
+document.querySelector('.container').addEventListener('mousemove', chageColor);
+
+function chageColor(e) {
+    this.style.background = `#${e.offsetX}`;
+}
 
 
 
