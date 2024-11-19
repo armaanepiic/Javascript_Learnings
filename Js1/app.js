@@ -1,3 +1,24 @@
+// Object Method
+let person = {
+    firstName: "Arman",
+    lastName: "Hossain",
+    dob: "30-04-1997",
+    fullName: function () {
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
+    console.log(person.fullName());
+    
+
+
+
+
+
+
+
+
+
+
 // For each
 /*
 var foods = ["Cake", "Ice Cream", "Donut", "Mango"];
@@ -35,9 +56,6 @@ let arr_res = numbers.map(arr_square);
 console.log(arr_res);
 */
 
-
-
-
 /*
 // Normal Declaration
 function sayHello(x) {
@@ -56,11 +74,6 @@ let sayHello2 = (el) => {
 }
 sayHello2("Hi");
 */
-
-
-
-
-
 
 // Function
 // User Defined Function
