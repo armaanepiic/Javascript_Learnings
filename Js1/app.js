@@ -1,3 +1,35 @@
+// Sub class
+// inheritance
+class Person {
+    constructor(fname, lname) {
+        this.firstName = fname;
+        this.lastName = lname;
+    }
+    greeting() {
+        return `Hello ${this.firstName} ${this.lastName}!`;
+    }
+}
+
+class Customer extends Person {
+    constructor(fname, lname, phone, membership) {
+        super(fname, lname);
+        this.phone = phone;
+        this.membership = membership;
+    }
+    fullName() {
+        console.log(`${this.firstName} ${this.lastName}`);
+    }
+}
+
+let person1 = new Person("Arman", "Hossain");
+let customer1 = new Customer("Rony", "Chowdhury", "01874015451", "123")
+
+console.log(person1.greeting());
+console.log(customer1.fullName());
+console.log(person1.fullName());
+
+
+
 
 /*
 class Person {
