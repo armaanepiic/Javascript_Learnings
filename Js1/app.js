@@ -1,3 +1,50 @@
+
+/*
+class Person {
+    constructor(firstName, lastName, dob) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = dob;
+    }
+    calculateAge() {
+        let birthday = new Date(this.dob);
+        let diff = Date.now() - birthday.getTime();
+        let ageDate = new Date(diff);
+        return Math.abs(ageDate.getUTCFullYear() - 1970);
+    }
+}
+// let person1 = new Person("arman", "hossain", "30-04-1997");
+// let person2 = new Person("nusrat", "nowmi", "2 6-02-1999");
+// let person3 = new Person("jon", "hossain", "15-06-2007");
+
+
+
+// console.log(person1);
+// console.log(person2);
+// console.log(person3);
+// console.log(person1.calculateAge());
+
+
+// let person1 = {
+//   firstName: "Arman",
+//   lastName: "Hossain",
+//   dob: "30-04-1997",
+//   fullName: function () {
+//     return `${this.firstName} ${this.lastName}`;
+//   }
+// };
+// let person2 = {
+//   firstName: "Nusrat",
+//   lastName: "Nowmi",
+//   dob: "26-02-1999",
+//   fullName: function () {
+//     return `${this.firstName} ${this.lastName}`;
+//   },
+// };
+// console.log(person1.firstName);
+// console.log(person2.firstName);
+
+
 // Object Method
 let person = {
     firstName: "Arman",
@@ -10,17 +57,8 @@ let person = {
     console.log(person.fullName());
     
 
-
-
-
-
-
-
-
-
-
 // For each
-/*
+
 var foods = ["Cake", "Ice Cream", "Donut", "Mango"];
 var numbers = [1,2,3,4,5,6,7,8];
 // 1st parameter: item
@@ -84,20 +122,3 @@ function sayHello() {
 }
 let x = sayHello();
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
