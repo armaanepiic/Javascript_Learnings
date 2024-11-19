@@ -1,6 +1,35 @@
 // DOM
 // Multiselector
 
+// document.querySelectorAll()
+// id -> #
+// class -> .
+let list;
+list = document.querySelectorAll('.sample-class');
+list = document.querySelectorAll("ul li");
+
+list.forEach(element => {
+    console.log(element);
+});
+
+let listOdd = document.querySelectorAll('li:nth-child(odd)');
+listOdd.forEach(element => {
+    element.style.background = "gray";
+    element.style.color = 'white';
+    element.style.padding = "10px";
+});
+let listEven = document.querySelectorAll('li:nth-child(even)');
+listEven.forEach(element => {
+    element.style.background = 'yellow';
+    element.style.padding = "10px";
+});
+
+console.log(list);
+
+
+
+
+/*
 // document.getElementByTagName()
 let list = document.getElementsByTagName('li'); 
 list = document.querySelector('ol').getElementsByTagName('li');
@@ -12,8 +41,6 @@ list_arr.forEach(element => {
 
 console.log(val);
 
-
-/*
 // document.getElementByClassName()
 let list = document.getElementsByClassName('sample-class');
 let el = list[0];
@@ -23,8 +50,6 @@ el.style.padding = '10px';
 el.textContent = "Hello World";
 
 console.log(el);
-
-
 
 // document.getElementById
 // getting an element
