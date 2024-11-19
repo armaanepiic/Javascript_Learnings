@@ -1,17 +1,39 @@
 // For each
+/*
 var foods = ["Cake", "Ice Cream", "Donut", "Mango"];
-var numbers = [1, 3, 5, 6, 7, 9];
+var numbers = [1,2,3,4,5,6,7,8];
 // 1st parameter: item
 // 2nd parameter: index
 // 3rd parameter: whole array
 
 foods.forEach(function (item, index, arr) {
-    console.log(item, index);
+    console.log(item);
+    console.log(index);
     console.log(arr);
 });
 
+// function epression
+let print = function (item, index, arr) {
+    console.log(item);
+    console.log(index);
+    console.log(arr);
+}
+foods.forEach(print);
+
+// array iteration using maping
+function addSomething(item) {
+    return `${item} is a Food`;
+}
+let arr_res = foods.map(addSomething);
+console.log(arr_res);
 
 
+function arr_square(item) {
+    return item*item;
+}
+let arr_res = numbers.map(arr_square);
+console.log(arr_res);
+*/
 
 
 
