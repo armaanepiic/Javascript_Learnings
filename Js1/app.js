@@ -1,4 +1,34 @@
 // DOM
+// Evenst in JS
+// eventlistener
+
+let btn = document.getElementById("sample-btn");
+btn.addEventListener('dblclick', message);
+
+function message() {
+    console.log("Button Clicked");
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 // replacing elements
 // let newHeading = document.createElement('h1');
 // newHeading.appendChild(document.createTextNode("H1 New Heading"));
@@ -22,17 +52,6 @@ list.removeChild(listItems[]);
 
 console.log(list);
 
-
-
-
-
-
-
-
-
-
-
-/*
 // Adding Element to DOM
 // create element
 let olItem = document.createElement('li');
