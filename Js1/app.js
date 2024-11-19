@@ -1,5 +1,38 @@
 // DOM
+// replacing elements
+// let newHeading = document.createElement('h1');
+// newHeading.appendChild(document.createTextNode("H1 New Heading"));
+// let oldHeading = document.querySelector('h3');
+// newHeading.className = "new sample-class";
+// let parent = document.querySelector(".container");
+// parent.replaceChild(newHeading, oldHeading);
 
+// console.log(newHeading);
+// console.log(oldHeading);
+// console.log(parent);
+
+// removing elements
+
+let listItems = document.querySelectorAll('li');
+listItems[0].remove();
+
+let list = document.querySelector('ul');
+list.removeChild(listItems[]);
+
+
+console.log(list);
+
+
+
+
+
+
+
+
+
+
+
+/*
 // Adding Element to DOM
 // create element
 let olItem = document.createElement('li');
@@ -35,18 +68,8 @@ console.log(ulItem);
 // console.log(olItem);
 
 
-
-
-
-
-
-
-
-
-
-
 // Multiselector
-/*
+
 // document.querySelectorAll()
 // id -> #
 // class -> .
