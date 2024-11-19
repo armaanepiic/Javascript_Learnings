@@ -1,3 +1,49 @@
+// DOM
+// document.getElementById
+let val;
+val = document.getElementById('title');
+val = document.getElementById('title').id;
+val = document.getElementById("title").className;
+
+
+console.log(val);
+
+
+
+
+
+/*
+let val;
+
+val = this;
+val = window.document;
+val = document;
+val = document.all;
+val = document.all.length;
+val = document.head;
+val = document.body;
+val = document.forms;
+val = document.forms[0].method;
+val = document.forms[0].action;
+val = document.links[0];
+val = document.links[0].href;
+val = document.links[0].className;
+val = document.links[0].classList;
+val = document.scripts[0];
+val = document.scripts[0].src;
+val = document.scripts[0].getAttribute('src');
+
+links = document.links;
+let linkArr = Array.from(links);
+linkArr.forEach(function (link) {
+    console.log(link);
+});
+
+console.log(val);
+
+
+
+
 // Sub class
 // inheritance
 class Person {
@@ -33,10 +79,6 @@ console.log(customer1.fullName());
 console.log(Person.test()); // static can be called from a Class not from an object
 
 
-
-
-
-/*
 class Person {
     constructor(firstName, lastName, dob) {
         this.firstName = firstName;
