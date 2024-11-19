@@ -1,6 +1,52 @@
 // DOM
-// Multiselector
 
+// Adding Element to DOM
+// create element
+let olItem = document.createElement('li');
+// Add Id and Class
+olItem.className = "a new another-class";
+olItem.id = 'new-element';
+// add attribute
+olItem.setAttribute('title', 'A title to new element');
+olItem.appendChild(document.createTextNode('Javascript'));
+
+document.querySelector('ol').appendChild(olItem);
+
+let ulItem = document.createElement('li');
+let link = document.createElement('a');
+link.appendChild(document.createTextNode('Youtube'));
+link.setAttribute('href', 'https://www.youtube.com');
+link.setAttribute("target", "blank");
+ulItem.appendChild(link);
+document.querySelector("ul").appendChild(ulItem);
+
+
+
+// let aItem = document.createElement('a');
+// aItem.setAttribute('href', 'https://www.youtube.com');
+// aItem.setAttribute("target", "blank");
+// aItem.appendChild(document.createTextNode('Youtube'));
+// document.querySelector('ul').children.appendChild(aItem);
+
+// console.log(aItem);
+
+console.log(ulItem);
+
+// console.log(olItem);
+
+
+
+
+
+
+
+
+
+
+
+
+// Multiselector
+/*
 // document.querySelectorAll()
 // id -> #
 // class -> .
@@ -27,9 +73,6 @@ listEven.forEach(element => {
 console.log(list);
 
 
-
-
-/*
 // document.getElementByTagName()
 let list = document.getElementsByTagName('li'); 
 list = document.querySelector('ol').getElementsByTagName('li');
