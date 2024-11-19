@@ -1,15 +1,26 @@
 // DOM
 // document.getElementById
+// getting an element
 let val;
 val = document.getElementById('title');
 val = document.getElementById('title').id;
 val = document.getElementById("title").className;
+// changing style
+document.getElementById('title').style.background = '#444';
+document.getElementById("title").style.color = "#fff";
+document.getElementById("title").style.padding = "10px";
+// changing content
+document.getElementById("title").innerText = "New Title";
+document.getElementById("title").innerHTML = "<i>New Title</i>";
+
+val = document.getElementById('title');
+val.innerText = "Ha Ha Ha";
+
+
+
 
 
 console.log(val);
-
-
-
 
 
 /*
