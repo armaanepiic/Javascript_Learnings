@@ -8,6 +8,9 @@ class Person {
     greeting() {
         return `Hello ${this.firstName} ${this.lastName}!`;
     }
+    static test() {
+        console.log("I am a static function");
+    }
 }
 
 class Customer extends Person {
@@ -26,7 +29,9 @@ let customer1 = new Customer("Rony", "Chowdhury", "01874015451", "123")
 
 console.log(person1.greeting());
 console.log(customer1.fullName());
-console.log(person1.fullName());
+// console.log(person1.fullName());
+console.log(Person.test()); // static can be called from a Class not from an object
+
 
 
 
