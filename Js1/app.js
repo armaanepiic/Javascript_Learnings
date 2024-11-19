@@ -16,6 +16,19 @@ document.getElementById("title").innerHTML = "<i>New Title</i>";
 val = document.getElementById('title');
 val.innerText = "Ha Ha Ha";
 
+// document.querySelector()
+val = document.querySelector('#title');
+val = document.querySelector(".title-class");
+val = document.querySelector("h3");
+val = document.querySelector("ol");
+val = document.querySelector("li");
+val = document.querySelector("ul li");
+val = document.querySelector("ol li");
+val.style.background = 'red';
+val.style.color = "white";
+val = document.querySelector('li:last-child');
+val = document.querySelector('li:nth-child(even)');
+val.innerText = "Hello";
 
 
 
