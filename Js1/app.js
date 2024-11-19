@@ -1,4 +1,22 @@
 // DOM
+// Multiselector
+
+
+
+
+/*
+// document.getElementByClassName()
+let list = document.getElementsByClassName('sample-class');
+let el = list[0];
+el.style.background = 'red';
+el.style.color = 'blue';
+el.style.padding = '10px';
+el.textContent = "Hello World";
+
+console.log(el);
+
+
+
 // document.getElementById
 // getting an element
 let val;
@@ -30,13 +48,8 @@ val = document.querySelector('li:last-child');
 val = document.querySelector('li:nth-child(even)');
 val.innerText = "Hello";
 
-
-
-
 console.log(val);
 
-
-/*
 let val;
 
 val = this;
