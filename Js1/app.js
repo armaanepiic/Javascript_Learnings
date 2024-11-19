@@ -1,7 +1,16 @@
 // DOM
 // Multiselector
 
+// document.getElementByTagName()
+let list = document.getElementsByTagName('li'); 
+list = document.querySelector('ol').getElementsByTagName('li');
 
+let list_arr = Array.from(list);
+list_arr.forEach(element => {
+    console.log(element);
+});
+
+console.log(val);
 
 
 /*
