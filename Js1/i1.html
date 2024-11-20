@@ -17,7 +17,15 @@
     <button style="margin-top: 10px;" id="click">Make Bold</button>
 
     <script>
-
+        const button = document.getElementById('click');
+        button.addEventListener('click',test);
+        function test(){
+            const paragraphs = document.getElementsByClassName('bold');
+            console.log(paragraphs);
+            for(let x of paragraphs){
+                x.innerHTML = `<strong>${x.innerHTML}</strong>`;
+            }
+        }
 
 
 
