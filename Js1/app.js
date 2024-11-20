@@ -1,6 +1,19 @@
 // DOM
 // Evenst in JS
 // eventlistener
+
+
+document.querySelector('#name').addEventListener('focus', test);
+document.querySelector("#name").addEventListener("keyup", test2);
+
+function test(e) {
+    this.style.background = 'pink';
+}
+function test2() {
+    // console.log(this.value);
+    document.getElementById('demo').innerText = this.value;
+}
+
 /*
 let btn = document.getElementById("sample-btn");
 btn.addEventListener('mouseover', message);
@@ -18,7 +31,7 @@ function message(e) {
     
 }
 
-*/
+
 
 document.querySelector('.container').addEventListener('mousemove', chageColor);
 
@@ -27,22 +40,6 @@ function chageColor(e) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
 // replacing elements
 // let newHeading = document.createElement('h1');
 // newHeading.appendChild(document.createTextNode("H1 New Heading"));
