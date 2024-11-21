@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+</head>
+<body>
+    <h1>Tailwind Example</h1>
+    <div class="flex-col p-10 space-y-8 max-w-2xl m-auto">
+        <div class="flex flex-row gap-8 cursor-pointer justify-between">
+            <img class="thumb rounded-md" src="https://i0.wp.com/picjumbo.com/wp-content/uploads/glass-of-coffee-beans.jpg?w=150&quality=70"
+                large="https://i0.wp.com/picjumbo.com/wp-content/uploads/glass-of-coffee-beans.jpg?w=1200&quality=70" alt="">
+            <img class="thumb rounded-md"
+                src="https://i0.wp.com/picjumbo.com/wp-content/uploads/autumn-background-with-space-for-text-and-leaves-around-free-image.jpeg?w=150&quality=70"
+                large="https://i0.wp.com/picjumbo.com/wp-content/uploads/autumn-background-with-space-for-text-and-leaves-around-free-image.jpeg?w=1200&quality=70"
+                alt="">
+            <img class="thumb rounded-md"
+                src="https://i0.wp.com/picjumbo.com/wp-content/uploads/fresh-watermelon-summer-drink.jpg?w=150&quality=70"
+                large="https://i0.wp.com/picjumbo.com/wp-content/uploads/fresh-watermelon-summer-drink.jpg?w=1200&quality=70"
+                alt="">
+        </div>
+        <div id="bigger" class="max-w-2xl"></div>
+
+    </div>
+
+    <script>
+        const images = document.querySelectorAll('.thumb');
+        const screen = document.getElementById('bigger');
+        const imgArr = Array.from(images);
+        imgArr.forEach(element => {
+            element.addEventListener('click', function(){
+                const newAttr = this.getAttribute('large');
+                const img = document.createElement('img');
+                img.src = newAttr;
+                img.style.width = '100%';
+                img.style.borderRadius = '10px';
+                bigger.innerHTML = '';
+                bigger.appendChild(img);
+            });
+        });
+        
+        
+    </script>
+</body>
+</html>
+
