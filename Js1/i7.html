@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Scope</h1>
+    <!-- <button id="click" onclick="doSomething()">Do Something</button> -->
+    <button id="click">Do Something</button>
+
+    <script>
+
+        const button = document.getElementById('click');
+            button.addEventListener('click', item => {
+                console.log(item);
+                item.innerText = 'Wow';
+            });
+            // here item in arrow function refers the event, not the button
+
+        // const button = document.getElementById('click');
+        // button.addEventListener('click', function () {
+        //     console.log("clicked");
+        //     this.innerText = 'Wow';
+        // });
+    </script>
+</body>
+
+</html>
