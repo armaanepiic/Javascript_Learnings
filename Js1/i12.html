@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select DropDown</title>
+    <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
+</head>
+<body>
+    <h1>Select Dropdown Event</h1>
+    <select id="countries">
+        <option value="0">Select a country</option>
+    </select>
+    <div style="margin-top: 20px;">
+        <p id="information"></p>
+    </div>
+
+    <script src="countries.js"></script>
+    <script>
+        const dropdown = document.getElementById('countries');
+        options = "";
+        for (let i = 0; i < countries.length; i++) {
+            options += `<option value="${countries[i].name}">${countries[i].name}</option>`;
+        }
+        dropdown.innerHTML += options;
+        dropdown.addEventListener('change', function(){
+            const selectedCountry = this.value;
+            console.log(selectedCountry);
+            for (let i = 0; i < countries.length; i++) {
+                if (selectedCountry == countries[i].name){
+                    let info = `Country: ${countries[i].name}<br>
+                    Code: ${countries[i].code}<br>
+                    Timezone: ${countries[i].timezone}<br>
+                    UTC: ${countries[i].utc}<br>
+                    MobileCode: ${countries[i].mobileCode}`;
+                    information.innerHTML += info;
+                    break;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
