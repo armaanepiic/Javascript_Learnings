@@ -1,3 +1,29 @@
+// Map
+let arr = [1, 2, 3, 4, 5];
+let newArr = arr.map(item => item * 2);
+console.log(newArr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 // DOM
 // Evenst in JS
 // eventlistener
@@ -14,7 +40,7 @@ function test2() {
     document.getElementById('demo').innerText = this.value;
 }
 
-/*
+
 let btn = document.getElementById("sample-btn");
 btn.addEventListener('mouseover', message);
 
