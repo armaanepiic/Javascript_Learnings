@@ -5,7 +5,15 @@ module.exports = {
     extend: {},
   },
   backgroundImage: {
-    'hero-image': "url()",
+    "hero-image": "url()",
+  },
+  fontFamily: {
+    sans: ["ui-sans-serif", "system-ui"],
+    serif: ["PT Serif", "serif"],
+    mono: ["ui-monospace", "SFMono-Regular"],
+    display: ["Oswald"],
+    body: ['"Open Sans"'],
+    roboto: ["Roboto", "sans - serif"],
   },
   plugins: [],
 };
