@@ -40,7 +40,20 @@ const characters = [
 let massGreater100 = characters.filter(el => {
     return el.mass>100;
 });
+let heightLessThan200 = characters.filter(el => {
+  return el.height < 200;
+});
+let male = characters.filter(el => {
+  return el.gender == 'male';
+});
+let female = characters.filter(el => {
+  return el.gender == 'female';
+})
 console.log(massGreater100);
+console.log(heightLessThan200);
+console.log(male);
+console.log(female);
+
 
 
 
