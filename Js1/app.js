@@ -3,27 +3,6 @@ let arr = [1, 2, 3, 4, 5];
 let newArr = arr.map(item => item * 2);
 console.log(newArr);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
 // DOM
 // Evenst in JS
 // eventlistener
@@ -66,19 +45,19 @@ function chageColor(e) {
 }
 
 
-// replacing elements
-// let newHeading = document.createElement('h1');
-// newHeading.appendChild(document.createTextNode("H1 New Heading"));
-// let oldHeading = document.querySelector('h3');
-// newHeading.className = "new sample-class";
-// let parent = document.querySelector(".container");
-// parent.replaceChild(newHeading, oldHeading);
+replacing elements
+let newHeading = document.createElement('h1');
+newHeading.appendChild(document.createTextNode("H1 New Heading"));
+let oldHeading = document.querySelector('h3');
+newHeading.className = "new sample-class";
+let parent = document.querySelector(".container");
+parent.replaceChild(newHeading, oldHeading);
 
-// console.log(newHeading);
-// console.log(oldHeading);
-// console.log(parent);
+console.log(newHeading);
+console.log(oldHeading);
+console.log(parent);
 
-// removing elements
+removing elements
 
 let listItems = document.querySelectorAll('li');
 listItems[0].remove();
@@ -111,24 +90,24 @@ document.querySelector("ul").appendChild(ulItem);
 
 
 
-// let aItem = document.createElement('a');
-// aItem.setAttribute('href', 'https://www.youtube.com');
-// aItem.setAttribute("target", "blank");
-// aItem.appendChild(document.createTextNode('Youtube'));
-// document.querySelector('ul').children.appendChild(aItem);
+let aItem = document.createElement('a');
+aItem.setAttribute('href', 'https://www.youtube.com');
+aItem.setAttribute("target", "blank");
+aItem.appendChild(document.createTextNode('Youtube'));
+document.querySelector('ul').children.appendChild(aItem);
 
-// console.log(aItem);
+console.log(aItem);
 
 console.log(ulItem);
 
-// console.log(olItem);
+console.log(olItem);
 
 
-// Multiselector
+Multiselector
 
-// document.querySelectorAll()
-// id -> #
-// class -> .
+document.querySelectorAll()
+id -> #
+class -> .
 let list;
 list = document.querySelectorAll('.sample-class');
 list = document.querySelectorAll("ul li");
@@ -285,36 +264,36 @@ class Person {
         return Math.abs(ageDate.getUTCFullYear() - 1970);
     }
 }
-// let person1 = new Person("arman", "hossain", "30-04-1997");
-// let person2 = new Person("nusrat", "nowmi", "2 6-02-1999");
-// let person3 = new Person("jon", "hossain", "15-06-2007");
+let person1 = new Person("arman", "hossain", "30-04-1997");
+let person2 = new Person("nusrat", "nowmi", "2 6-02-1999");
+let person3 = new Person("jon", "hossain", "15-06-2007");
 
 
 
-// console.log(person1);
-// console.log(person2);
-// console.log(person3);
-// console.log(person1.calculateAge());
+console.log(person1);
+console.log(person2);
+console.log(person3);
+console.log(person1.calculateAge());
 
 
-// let person1 = {
-//   firstName: "Arman",
-//   lastName: "Hossain",
-//   dob: "30-04-1997",
-//   fullName: function () {
-//     return `${this.firstName} ${this.lastName}`;
-//   }
-// };
-// let person2 = {
-//   firstName: "Nusrat",
-//   lastName: "Nowmi",
-//   dob: "26-02-1999",
-//   fullName: function () {
-//     return `${this.firstName} ${this.lastName}`;
-//   },
-// };
-// console.log(person1.firstName);
-// console.log(person2.firstName);
+let person1 = {
+  firstName: "Arman",
+  lastName: "Hossain",
+  dob: "30-04-1997",
+  fullName: function () {
+    return `${this.firstName} ${this.lastName}`;
+  }
+};
+let person2 = {
+  firstName: "Nusrat",
+  lastName: "Nowmi",
+  dob: "26-02-1999",
+  fullName: function () {
+    return `${this.firstName} ${this.lastName}`;
+  },
+};
+console.log(person1.firstName);
+console.log(person2.firstName);
 
 
 // Object Method
@@ -366,7 +345,7 @@ let arr_res = numbers.map(arr_square);
 console.log(arr_res);
 */
 
-/*
+
 // Normal Declaration
 function sayHello(x) {
     console.log('Hello ' + x);
@@ -383,14 +362,14 @@ let sayHello2 = (el) => {
     console.log("I am an arrow function " + el);
 }
 sayHello2("Hi");
-*/
+
 
 // Function
 // User Defined Function
-/*
+
 function sayHello() {
     console.log("hello");
     console.log("I am learning JS");
 }
 let x = sayHello();
-*/
+
