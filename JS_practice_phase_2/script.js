@@ -1,11 +1,22 @@
 
-// let js = "amazing";
-// if (js === "amazing")
-// console.log(10 + 15);
-// console.log("Erik");
-let firstName = "erik";
-console.log(firstName);
-console.log(firstName);
-console.log(firstName);
 
 
+
+
+
+
+
+
+
+
+/*
+// Dynamic typing
+let jsIsFun = true;
+console.log(typeof jsIsFun); // boolean
+jsIsFun = "YES";
+console.log(typeof jsIsFun); // string
+
+let year;
+console.log(year);
+console.log(typeof year);
+*/
