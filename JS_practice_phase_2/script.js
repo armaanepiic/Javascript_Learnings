@@ -1,3 +1,11 @@
-let js = "amazing";
-if (js === "amazing") alert("javascipt is FUN");
-console.log(10 + 15);
+
+// let js = "amazing";
+// if (js === "amazing")
+// console.log(10 + 15);
+// console.log("Erik");
+let firstName = "erik";
+console.log(firstName);
+console.log(firstName);
+console.log(firstName);
+
+
