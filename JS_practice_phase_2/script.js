@@ -1,6 +1,157 @@
 
 // ES6 ECMAScript6
 
+// constructor
+
+// class Person {
+//     constructor(age, name) {
+//         this.age = age;
+//         this.name = name;
+//     }
+//     getName() {
+//         // console.log(this.name);
+//         return this.name;
+//     }
+// }
+// let person1 = new Person(25, "Arman");
+// console.log(person1);
+// console.log(person1.getName());
+
+
+/*
+// Symbol
+// Symbol is always unique
+
+let a = Symbol();
+let b = Symbol();
+// console.log(a);
+// console.log(b);
+// console.log(a == b);
+
+let person = {
+    name: "Arman",
+    age: "26",
+    [a]: "Hello"
+}
+// console.log(person);
+// symbol is not the property of this object
+console.log(Object.getOwnPropertyNames(person));
+console.log(Object.getOwnPropertySymbols(person));
+console.log(JSON.stringify(person));
+for(x in person)console.log(x);
+
+let sym1 = Symbol();
+let sym2 = Symbol();
+console.log(sym1 == sym2);
+*/
+
+// iterator
+// let iterable = "Hello";
+// Symbol.iterator
+// let iter = iterable[Symbol.iterator]();
+// console.log(iter);
+// console.log(iter.next()); // H
+// console.log(iter.next()); // e
+// console.log(iter.next()); // l
+// console.log(iter.next()); // l
+// console.log(iter.next()); // o
+// console.log(iter.next()); // undefined
+// console.log(iter.next()); // undefined
+
+
+/*
+// custom iterator
+let names = ["Arman", "Nusrat", "John", "Doe"];
+
+function customIterator(arr) {
+    let i = 0;
+    return {
+        next: function () {
+            return i < arr.length ? { value: arr[i++], done: false } : { value: undefined, done: true };
+        }
+    }
+}
+
+let members = customIterator(names);
+console.log(members.next().value);
+console.log(members.next().value);
+console.log("random codes");
+
+console.log(members.next().value);
+console.log(members.next().value);
+console.log(members.next());
+*/
+
+/*
+// Generator
+
+function* genFunction() {
+    console.log("Random code");
+    yield 1;
+    yield "Rahim";
+    console.log("Random code");
+    console.log("Random code");
+    return;
+    console.log("Random code");
+    yield 4;
+    yield "karim";
+    yield ["Hello World"];
+}
+
+let iter = genFunction();
+
+console.log(iter.next());
+console.log(iter.next());
+console.log(iter.next());
+console.log(iter.next());
+console.log(iter.next());
+console.log(iter.next());
+*/
+
+
+/*
+// Promise
+// successful -> resolve
+// fail -> reject
+let prom = new Promise((resolve, reject) => {
+    let a;
+    setTimeout(() => {
+        a = 1 + 1;
+        if (a == 2) {
+            resolve('success');
+        } else {
+            reject('Failed');
+        }
+    }, 4000);
+})
+// .then .catch
+
+prom.then((message) => {
+    console.log("I am from catch " + message);
+}).catch((message) => {
+    console.log("I am from " + message);
+})
+
+console.log("I am after promise");
+*/
+
+async function getJokes() {
+    return "all the jokes";
+}
+getJokes().then(res => console.log(res));
+
+
+
+
+
+
+
+
+
+
+
+
+
 // let hello = name => console.log(name);
 // hello("arman");
 
