@@ -74,8 +74,51 @@ val = document.querySelector('li:last-child')
 val = document.querySelector('li:nth-child(2)')
 
 console.log(val);
-*/
+
 
 // Multiselector
-// document.getElementByClassName()
+// document.getElementsByClassName()
 
+let val, valArr;
+val = document.getElementsByClassName('sample-class');
+valArr = Array.from(val);
+valArr.forEach(element => {
+  console.log(element);
+});
+val[0].style.background = 'black';
+val[0].style.color = "white";
+val[0].style.padding = "15px";
+console.log(val);
+
+
+// document.getElementByTagName()
+let list = document.getElementsByTagName('li'); // array which is not accessible by foreach loop
+let arrlist = Array.from(list);
+arrlist.forEach(element => {
+    console.log(element);
+});
+console.log(list);
+// here comest all li tag of the document
+// if we want the ol li only we should use queryselector
+list = document.querySelector('ol').getElementsByTagName('li');
+console.log(list);
+
+
+// document.querySelectorAll()
+// id -> # class -> . tag -> nothing
+// pure array
+let list = document.querySelectorAll('ol li');
+// list.forEach(el => console.log(el));
+// accessible array
+let liOdd = document.querySelectorAll('li:nth-child(odd)');
+console.log(liOdd);
+liOdd.forEach(element => {
+  element.style.background = 'skyblue';
+});
+let lieven = document.querySelectorAll("li:nth-child(even)");
+console.log(lieven);
+lieven.forEach((element) => {
+  element.style.background = "green";
+  element.style.color = 'white';
+});
+*/
