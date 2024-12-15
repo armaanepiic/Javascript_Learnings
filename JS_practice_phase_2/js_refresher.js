@@ -121,4 +121,30 @@ lieven.forEach((element) => {
   element.style.background = "green";
   element.style.color = 'white';
 });
+
+
+// Traversing the DOM
+let list = document.querySelector('ul');
+// console.log(list);
+let val = list.childNodes;
+val = list.childNodes[1];
+val = list.childNodes[1].nodeName;
+val = list.childNodes[1].nodeType;
+// 1 element
+// 2 attribute
+// 3 text node
+// 8 commnet
+// 9 document itself
+// 10 doctype
+val = list.children; // without text 
+val = list.children[0].textContent = 'hello';
+val = list.children[1].children[0];
+val = list.children[1].children[0].href; // href link
+val = list.firstChild;
+val = list.firstElementChild;
+val = list.lastChild;
+val = list.lastElementChild;
+val = list.childElementCount;
+val = list.lastElementChild.parentElement.parentElement;
+console.log(val);
 */
