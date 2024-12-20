@@ -147,4 +147,85 @@ val = list.lastElementChild;
 val = list.childElementCount;
 val = list.lastElementChild.parentElement.parentElement;
 console.log(val);
-*/
+
+
+
+// adding element to DOM
+// create element
+let olItem = document.createElement('li');
+// add ID and Class
+olItem.className = 'sample-class';
+olItem.id = 'new-element';
+// add attribute
+olItem.setAttribute('title', 'a title to new element');
+let item = document.createTextNode('JavaScript');
+olItem.appendChild(item);
+document.querySelector('ol').appendChild(olItem);
+console.log(olItem);
+
+let ulItem = document.createElement('li');
+let ulLink = document.createElement('a');
+ulLink.href = 'https://www.youtube.com';
+ulLink.setAttribute('target', '_blank');
+let text = document.createTextNode('youtube');
+ulLink.appendChild(text);
+ulItem.appendChild(ulLink);
+
+
+// console.log(ulItem);
+console.log(ulItem);
+document.querySelector('ul').appendChild(ulItem);
+let links = document.querySelectorAll('ul li a');
+links.forEach(el => el.setAttribute('target', '_blank'));
+
+console.log(links);
+
+
+// replacing elements
+let newHeading = document.createElement('h1');
+let oldHeading = document.querySelector('h3');
+
+newHeading.appendChild(document.createTextNode('H1 new heading'));
+let parent = document.querySelector('.container');
+parent.replaceChild(newHeading, oldHeading);
+
+// remove element
+let listItems = document.querySelectorAll('li');
+listItems[0].remove();
+listItems[1].remove();
+let list = document.querySelector('ol');
+
+console.log(list);
+console.log(listItems);
+
+
+// events of js
+let btn = document.getElementById('btn');
+// btn.addEventListener('click', () => { console.log('clicked') });
+
+// console.log(btn);
+
+btn.addEventListener('click', message);
+function message(e) {
+  let val = e.target;
+  val = e.target.id;
+  val = e.timeStamp;
+  val = e.type;
+  val = e.clientY;
+  val = e.clientX;
+  console.log(val);
+}
+
+document.querySelector('.container').style.border = '2px solid red';
+document.querySelector('.container').style.background = 'pink';
+document.querySelector('.container').addEventListener('mouseover', (el) => {
+  console.log(el.offsetX);
+});*/
+
+let item = document.getElementById('name');
+item.addEventListener('keyup', test);
+function test() {
+  document.getElementById('para').innerText = this.value;
+}
+
+// console.log(item);
