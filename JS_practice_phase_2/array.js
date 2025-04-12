@@ -38,6 +38,10 @@ var z = y;
 x = z.toString(); // insert comma
 x = z.join(' '); // make a string inserting white space
 
+const cars = new Array("BMW", "Audi", "Volvo");
+console.log(typeof cars);
+
+
 console.log(z);
 
 console.log(x);
