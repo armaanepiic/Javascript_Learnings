@@ -80,14 +80,35 @@ z = x.replaceAll('Cat', "Dog");
 // str.split()
 x = "Hello";
 z = x.split("");
-for (let index = 0; index < z.length; index++) {
-    console.log(z[index]);    
-}
+// for (let index = 0; index < z.length; index++) {
+//     console.log(z[index]);    
+// }
 x = "I love Bangladesh";
 z = x.split(' ');
-for (let index = 0; index < z.length; index++) {
-  console.log(z[index]);
-}
+// for (let index = 0; index < z.length; index++) {
+//   console.log(z[index]);
+// }
+
+// str.indexOf()
+x = "Please locate where 'locate' occurs!";
+z = x.indexOf("locate");
+// str.lastIndexOf()
+z = x.lastIndexOf('locate');
+// if not found it returns -1
+z = x.indexOf('arman');
+
+x = "Please locate where 'locate' occurs!";
+z = x.indexOf('locate', 9);
+z = x.lastIndexOf('locate', 23);
+
+// str.match('characters')
+// returns an array
+x = "The rain in SPAIN stays mainly in the plain";
+z = x.match('ain'); // first occurance
+z = x.match(/ain/g); // globally all occurance
+
+
+console.log(z);
 
 console.log(`z = ${z}`); 
 // console.log(`x = ${x}`);
