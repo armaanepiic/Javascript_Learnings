@@ -53,13 +53,16 @@ val = document.getElementById("document-title").classList;
 
 // changing styles
 val = document.getElementById('document-title');
-val.style.background = 'tomato';
+val.style.background = 'teal';
 val.style.color = '#fff';
 val.style.padding = '10px';
 // val.style.display = 'none';
 val.style.display = "block";
 
 // changing content
+val.textContent = 'New Title';
+val.innerText = "Again New Title";
+val.innerHTML = "<strong><i>Italic new title</i></strong>";
 
 
 
