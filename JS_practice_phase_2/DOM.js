@@ -81,7 +81,7 @@ val = document.querySelector('ol');
 val = document.querySelector("li");
 val = document.querySelector('ul li');
 val = document.querySelector('ol li');
-val.style.background = 'yellow';
+// val.style.background = 'yellow';
 val = document.querySelector('li:last-child'); // same level last child
 val = document.querySelector('li:nth-child(1)');
 // val.innerHTML = 'Hello';
@@ -112,10 +112,38 @@ list.forEach(el => {
 var listOdd = document.querySelectorAll('li:nth-child(odd)');
 var listEven = document.querySelectorAll('li:nth-child(even)');
 listOdd.forEach(el => {
-    el.style.background = 'yellow';
+    // el.style.background = 'yellow';
 });
 listEven.forEach(el => {
-    el.style.background = 'tomato';
+    // el.style.background = 'tomato';
 });
 
-console.log(list);
+// Traversing the DOM
+list = document.querySelector('ul');
+val = list.childNodes;
+val = list.childNodes[4];
+val = list.childNodes[3].nodeName;
+val = list.childNodes[4].nodeType;
+// 1 -> Element
+// 2 -> Attribute
+// 3 -> Text Node
+// 4 -> Comment
+// 5 -> Document Itself
+// 6 -> Doctype
+val = list.children[0].children[0].textContent = "Hello";
+val = list.children[1].children[0].href;
+val = list.firstChild;
+val = list.firstElementChild;
+val = list.childElementCount;
+
+var listItem = document.querySelector('ul li:first-child');
+val = listItem.parentElement;
+val = listItem.parentNode.parentElement;
+val = listItem.nextElementSibling; // without text
+
+
+
+
+console.log(listItem);
+console.log(val);
+
