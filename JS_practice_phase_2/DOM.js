@@ -71,7 +71,7 @@ val.innerHTML = "<strong><i>Italic new title</i></strong>";
 val = document.querySelector('#document-title');
 val.style.color = "black";
 // class
-val = document.querySelector(".title-class");
+val = document.querySelector(".sample-class");
 val.style.color = "#fff";
 // tagName
 val = document.querySelector('h3');
@@ -84,7 +84,23 @@ val = document.querySelector('ol li');
 val.style.background = 'yellow';
 val = document.querySelector('li:last-child'); // same level last child
 val = document.querySelector('li:nth-child(1)');
-val.innerHTML = 'Hello';
+// val.innerHTML = 'Hello';
+
+// Multiselector
+// document.getElementByClassName()
+let list = document.getElementsByClassName('sample-class')[0];
+list.style.background = "green";
+list.style.color = 'skyblue';
+list.textContent = "Hello World";
+
+// document.getElementByTagName()
+list = document.getElementsByTagName('li');
+list = document.querySelector('ol').getElementsByTagName('li');
+let arrList = Array.from(list);
+arrList.forEach(el => {
+    console.log(el);
+});
 
 
-console.log(val);
+
+console.log(list);
