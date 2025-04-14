@@ -1,4 +1,4 @@
-let val;
+var val;
 
 val = this;
 val = window;
@@ -34,10 +34,34 @@ val = document.scripts[0].getAttribute('src');
 let links = document.links;
 let arr = Array.from(links);
 arr.forEach(el => {
-    console.log(el);
+    // console.log(el);
 });
 
 // forEach loop cannot access through dom
 // we need to conver it to an array first
+// console.log(val);
+// console.log(links);
+
+// selector
+// document.getElementById('id-name')
+var val;
+
+val = document.getElementById('document-title');
+val = document.getElementById("document-title").id;
+val = document.getElementById("document-title").className;
+val = document.getElementById("document-title").classList;
+
+// changing styles
+val = document.getElementById('document-title');
+val.style.background = 'tomato';
+val.style.color = '#fff';
+val.style.padding = '10px';
+// val.style.display = 'none';
+val.style.display = "block";
+
+// changing content
+
+
+
+
 console.log(val);
-console.log(links);
