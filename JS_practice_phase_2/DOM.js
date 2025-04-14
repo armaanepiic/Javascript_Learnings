@@ -98,9 +98,24 @@ list = document.getElementsByTagName('li');
 list = document.querySelector('ol').getElementsByTagName('li');
 let arrList = Array.from(list);
 arrList.forEach(el => {
-    console.log(el);
+    // console.log(el);
 });
 
-
+// document.querySelectorAll()
+// it create pure array
+list = document.querySelectorAll('.sample-class');
+list = document.querySelectorAll('ul li')
+list = document.querySelectorAll("ol li");
+list.forEach(el => {
+    // console.log(el);
+});
+var listOdd = document.querySelectorAll('li:nth-child(odd)');
+var listEven = document.querySelectorAll('li:nth-child(even)');
+listOdd.forEach(el => {
+    el.style.background = 'yellow';
+});
+listEven.forEach(el => {
+    el.style.background = 'tomato';
+});
 
 console.log(list);
