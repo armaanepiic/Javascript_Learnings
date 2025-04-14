@@ -1,4 +1,4 @@
-var val;
+let val;
 
 val = this;
 val = window;
@@ -44,7 +44,7 @@ arr.forEach(el => {
 
 // selector
 // document.getElementById('id-name')
-var val;
+
 
 val = document.getElementById('document-title');
 val = document.getElementById("document-title").id;
@@ -64,7 +64,27 @@ val.textContent = 'New Title';
 val.innerText = "Again New Title";
 val.innerHTML = "<strong><i>Italic new title</i></strong>";
 
+// querySelector
+// called by name, id, class, tag
 
+// id
+val = document.querySelector('#document-title');
+val.style.color = "black";
+// class
+val = document.querySelector(".title-class");
+val.style.color = "#fff";
+// tagName
+val = document.querySelector('h3');
+val.style.background = 'tomato';
+// ol
+val = document.querySelector('ol');
+val = document.querySelector("li");
+val = document.querySelector('ul li');
+val = document.querySelector('ol li');
+val.style.background = 'yellow';
+val = document.querySelector('li:last-child'); // same level last child
+val = document.querySelector('li:nth-child(1)');
+val.innerHTML = 'Hello';
 
 
 console.log(val);
