@@ -223,12 +223,28 @@ function message(e) {
     val = e.offsetY;
 
     // console.log(val);
-    console.log(e.offsetX);
-    console.log(e.offsetY);
+    // console.log(e.offsetX);
+    // console.log(e.offsetY);
     val = this;
-    bg.style.background = `#${e.offsetX}`
+    // bg.style.background = `#${e.offsetX}`
     
 }
+
+
+let test = document.querySelector("#form");
+test.addEventListener('focus', isFocus);
+function isFocus(e) {
+    test.style.background = 'pink';
+    console.log("Focused!");
+}
+test.addEventListener('keyup', isFocus1);
+function isFocus1() {
+    // console.log(this.value);
+    let para = document.getElementById('demo');
+    para.innerText = this.value;
+}
+
+
 
 
 
