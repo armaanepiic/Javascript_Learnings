@@ -142,8 +142,38 @@ val = listItem.parentNode.parentElement;
 val = listItem.nextElementSibling; // without text
 
 
+// console.log(listItem);
+// console.log(val);
+
+//  
+let olItem = document.createElement('li');
+// add id class
+olItem.className = 'another-class';
+olItem.id = 'new-element';
+olItem.setAttribute('title', 'A title to new element');
+// create content
+let olContent = document.createTextNode('JavaScript');
+olItem.appendChild(olContent);
+let olTarget = document.querySelector('ol');
+olTarget.appendChild(olItem);
+
+let ulItem = document.createElement('li');
+let linkItem = document.createElement('a');
+linkItem.href = 'www.youtube.com';
+linkItem.target = '_blank';
+linkItem.textContent = 'Youtube';
+ulItem.className = 'another-class';
+ulItem.id = 'new-element';
+ulItem.appendChild(linkItem);
+
+ulItem.setAttribute('title', 'A title to new element');
+
+let ulTarget = document.querySelector('ul');
+ulTarget.appendChild(ulItem);
 
 
-console.log(listItem);
-console.log(val);
+console.log(ulItem);
+
+
+
 
