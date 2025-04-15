@@ -172,7 +172,20 @@ let ulTarget = document.querySelector('ul');
 ulTarget.appendChild(ulItem);
 
 
-console.log(ulItem);
+// console.log(ulItem);
+
+// replacing elements
+let newHeading = document.createElement('h1');
+let headingContent = document.createTextNode("H1 New Heading");
+newHeading.appendChild(headingContent);
+newHeading.className = "sample-class";
+let oldHeading = document.querySelector('h3');
+let parent = document.querySelector('.container');
+parent.replaceChild(newHeading, oldHeading);
+
+
+console.log(parent);
+
 
 
 
