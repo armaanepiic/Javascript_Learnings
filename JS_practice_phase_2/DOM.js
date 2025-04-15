@@ -184,7 +184,51 @@ let parent = document.querySelector('.container');
 parent.replaceChild(newHeading, oldHeading);
 
 
-console.log(parent);
+// console.log(parent);
+
+// remove element
+let listItems = document.querySelectorAll('li');
+let listUl = document.querySelector('ul');
+// adding class
+listUl.classList.add('test');
+listUl.classList.remove('test');
+let has = listUl.hasAttribute('title');
+
+// console.log(has);
+
+listItems[0].remove();
+
+// console.log(listItems);
+// console.log(listUl);
+
+// events of JS
+
+// onClick
+// eventlistener
+
+let btn = document.getElementById("sample-btn");
+// btn.addEventListener('click', message);
+btn.addEventListener("mousemove", message);
+let bg = document.querySelector('.btn').style.background;
+
+function message(e) {
+    let val = e;
+    val = e.target;
+    val = e.target.id;
+    val = e.timeStamp;
+    val = e.type;
+    val = e.clientX;
+    val = e.clientY;
+    val = e.offsetX;
+    val = e.offsetY;
+
+    // console.log(val);
+    console.log(e.offsetX);
+    console.log(e.offsetY);
+    val = this;
+    bg.style.background = `#${e.offsetX}`
+    
+}
 
 
 
