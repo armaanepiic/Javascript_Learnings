@@ -1,0 +1,8 @@
+{
+    "persons" : [
+        {"name": "arman", "age": 26, "hometown": "Chittagong"},
+        {"name": "nusrat", "age": 24, "hometown": "Sitakund"},
+        {"name": "john", "age": 36, "hometown": "UK"},
+        {"name": "doe", "age": 30, "hometown": "USA"}
+    ]
+}
