@@ -1,3 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 var student = {
     fname: "Arman",
     lname: "Hossain",
@@ -38,8 +56,4 @@ let person = {
 console.log(person.fname);
 console.log(person.fullName());
 
-
-
-
-
-
+*/
